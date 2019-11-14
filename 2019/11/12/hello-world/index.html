@@ -3,7 +3,7 @@
 
 <head>
   
-  <title>Hello World - Hexo</title>
+  <title>Hello World - sagirisense&#39;s blog</title>
   <meta charset="UTF-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -15,7 +15,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hello World">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;12&#x2F;hello-world&#x2F;index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="sagirisense&#39;s blog">
 <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-11-12T02:41:43.969Z">
@@ -27,7 +27,7 @@
   
   
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
-  <link rel="stylesheet" href="/css/style.css?v=1573717644253">
+  <link rel="stylesheet" href="/css/style.css?v=1573718288910">
 </head>
 
 <body class="mdui-drawer-body-left">
@@ -39,15 +39,15 @@
         <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
         <div class="mdui-toolbar-spacer"></div>
         <!--<a href="javascript:;" target="_blank" rel="noopener" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
-        <a href="/" title="John Doe" class="mdui-btn mdui-btn-icon"><img src="https://cdn.jsdelivr.net/gh/sagirisense/blogassets@latest/images/avatar.png"></a>
+        <a href="/" title="sagirisense" class="mdui-btn mdui-btn-icon"><img src="https://cdn.jsdelivr.net/gh/sagirisense/blogassets@latest/images/avatar.png"></a>
        </div>
     </div>
   </div>
   <div id="nexmoe-header">
       <div class="nexmoe-drawer mdui-drawer" id="drawer">
     <div class="nexmoe-avatar mdui-ripple">
-        <a href="/" title="John Doe">
-            <img src="https://cdn.jsdelivr.net/gh/sagirisense/blogassets@latest/images/avatar.png" alt="John Doe">
+        <a href="/" title="sagirisense">
+            <img src="https://cdn.jsdelivr.net/gh/sagirisense/blogassets@latest/images/avatar.png" alt="sagirisense">
         </a>
     </div>
     <div class="nexmoe-count">
@@ -109,7 +109,7 @@
   
 </aside>
     <div class="nexmoe-copyright">
-        &copy; 2019 John Doe
+        &copy; 2019 sagirisense
         Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
         & <a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Nexmoe</a>
     </div>
@@ -151,7 +151,7 @@
     
 <div class="nexmoe-post-copyright">
 <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
-<strong>本文作者：</strong>John Doe<br>
+<strong>本文作者：</strong>sagirisense<br>
 <strong>本文链接：</strong><a href="http://yoursite.com/2019/11/12/hello-world/" title="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;12&#x2F;hello-world&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;12&#x2F;hello-world&#x2F;</a><br>
 
   <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
@@ -192,13 +192,32 @@
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-<script src="/js/app.js?v=1573717644255"></script>
+<script src="/js/app.js?v=1573718288912"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
 
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
 
 
+ 
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script>
+    <script>
+        var pjax = new Pjax({
+            elements: 'a[href]:not([href^="#"])',
+            cacheBust: false,
+            debug: false,
+            selectors: [
+                'title',
+                '#nexmoe-content'
+            ]
+        });
+        document.addEventListener('pjax:send', function () {
+            
+        });
+        document.addEventListener('pjax:complete', function () {
+            
+        });
+    </script>
 
   
 
