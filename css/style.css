@@ -222,6 +222,7 @@ body {
   color: #777;
   white-space: normal;
   margin-bottom: 20px;
+  margin-left: -20px;
 }
 #nexmoe-header .nexmoe-copyright a {
   color: rgba(255,78,106,0.8);
